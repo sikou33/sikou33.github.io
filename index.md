@@ -1,5 +1,5 @@
 ---
-# tittle :jiazhen tian resume
+# title :jiazhen tian resume
 ---
 
 # **Jiazhen Tian**
