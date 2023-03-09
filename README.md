@@ -1,5 +1,6 @@
-# How to creat static websits with resume and host it on GitHub Pages 
+# How to host a resume on GitHub Pages and creat Static Websites
 ---
+This readme shows how to create a static website and host it to GitHub pages by Jekyll
 
 ## Purpose:
 ---
@@ -24,7 +25,7 @@ If you don't know how to format resume by using Markdown. you can see Markdown i
     - [GitHub Account](https://github.com/join)
     - [Git](https://git-scm.com/downloads)
     - [Jekyll](https://jekyllrb.com/docs/installation/)
-    - [Ruby (Jekyll in windows)](https://jekyllrb.com/docs/installation/windows/)
+    - [RubyInstaller (Jekyll in windows)](https://jekyllrb.com/docs/installation/windows/)
 
 # Instructions:
 ---
@@ -34,88 +35,99 @@ This is the resume page I created through the following steps.
 #### **Step 1:** Create a new repository
 1. Click on the `+` on the main page and select new repository.
 2. Make basic settings
-    - Enter the repository name `youraccountName.github.io`
+    - Enter the repository name
     - Set Public (that Anyone can see this repository)
+    - Don't Select `Add a README file`
     - Click Create repository
+3. Okay we have repository now, but don't close it yet, we'll need it later
 
-#### **Step 2:** Create, and Edit Static website
+#### **Step 2:** Create, Edit, View a Static website
 1. **Create**
-  - Run the following commands（You can replace it with the name you want to change）to Create  Static Site default files in the current directory  
-    ``` 
-    jekyll new NAME
-    ```
+  - Open terminal Go to the directory where you can easily find
+
+```
+cd path-to-your-directory
+```
+   - Run the following commands（You can replace it with the name you want to change）to Create a Static Site
+
+``` 
+jekyll new NAME
+```
 
 2. **Edit**  
-  Since we want to display the resume file directly on the homepage, we have to do the following
-    1. Delete the `index.md` file from the original folder and rename the `readme.md` to `index.md`
-    2. Select a favorite theme from the [GitHub page Supported themes](https://pages.github.com/themes/) and open it.
-    3. Found in the theme page of the readme, follow the readme to change `_config.yml`
-    4. my guide uses the cayman theme so add following to `_config.yml`and remove `theme: minima`
-    
-         ```
-         remote_theme: pages-themes/cayman@v0.2.0
-         plugins:
-         - jekyll-remote-theme
-         ```
-    5. use # comment out the line start with `"gem jekyll"`  
-    6. remove # from gem `gem "github-pages", group: :jekyll_plugins`
-    7. Add the following setting to the beginning of `index.md`
-         ```
-         ---
-         layout: default
-         title: yourneme resume
-         ---
-         ```
+Since we are using the default template in this guide, we have to make some changes in resume.  
+If you want to know more about jekyll please see [More Resources](#more-resources).
+ - Open `resume.md` And add the following default settings at the beginning of the resume  
+   (Date, and time modified according to your own)  
+   (This is done to keep your resume in the same style on default static sites)
 
+```
+---
+layout: post
+title:  "resume"
+date:   YYYY-MM-DD 00:00:00 -0600
+categories: jekyll update
+---
+```
+- Save the file name as YYYY-MM-DD-NAME (The date, time and filename here are also up to you)
+- Then move the resume files to the `_posts` folder (This folder is in the static site folder that was just created)
+
+3. **View**
+- open the terminal to go to the static website folder we created
+- Run the following commands
+
+```
+bundle exec jekyii serve
+```
+- Then you will get the website address, open your browser and enter the website address so that we can see what the website looks like
+- Click on resume and you will see the resume
+
+4. At the end of this step we have created the static site and hosted the resume on the static site.
 #### **Step 3:** Hosting on Github Pages
-Open a terminal in the Static Sites folder and enter the following command
 
+- open `_config.yml`
+- Add your repository name to the "" after `baseurl` and save
+- open the terminal to go to the static website folder we created
+- Run the following commands
 1. this is goona initalize this repository as like a git repository
 
-    ```
-    git init
-    ```
+```
+git init
+```
 2. We need to check out the gh-pages branch so run
 
-    ```
-    git checkout -b gh-pages
-    ```
-
+```
+git checkout -b gh-pages
+```
+3. The following need to check our files
+```
+git status
+```
 4. go to commit all files to repository
 
-    ```
-    git add .
-    ```
-    ```
-    git commit -m "initial commit"
-    ```
-5. Connecting local repository to online repository
-    ```
-    git remote add origin {link}
-    ```
-6. choose the bash
-    ```
-    git branch -M main
-    ```
-7. push all thing in your local repository
-    ```
-    git push -u origin main
-    ```
+```
+git add .
+```
+```
+git commit -m "initial commit"
+```
+5. The last thing is to put the local github repository wiht the github this is goona initalize this repository as like a git repository
+- Copy the link that show on our repository on GitHub, and run the following commands(Replace the link in the following command)
+```
+git remote add origin {link}
+```
+```
+git branch -M main
+```
+```
+git push -u origin main
+```
+- Now we can find our files on github
 
-8. Click our repository's `setting`, then select the `page` option
-9. Select `main` and `root` in the `branch` and save.  
+6. Click our repository's `setting` and find `page`
+7. Select `main` and `root` in the `branch` and save, then wait for a while and we will get the link to the GitHub page, so we will successfully create a static website with a resume and host the website on the GitHub page.
 
-Then wait for a while and we will get the link to the GitHub page, so we will successfully create a static website with a resume and host the website on the GitHub page.
 
-#### **Step 4:** Local View
- Open terminal in static site file and run the following commands
- 1. Run ```gem install bundler``` to install bundler
- 2. Run ```bundle exec jekyll serve``` 
-- If you get error in this step run ```bundle add webrick``` then re-run ```bundle exec jekyll serve```
-    ```
-    bundle exec jekyll serve
-    ```
-When we open the obtained link in the browser, we can see the web page and we can modify the index.md to change the web page content.(Note that you have to remember to upload after modifying)
 
 
 
@@ -151,5 +163,5 @@ When we open the obtained link in the browser, we can see the web page and we ca
 **Q:** Why is Markdown better than a word processor?  
 **A:** Because markdown is lightweight. We can even use it in the editor of the web without installing any software.Secondly markdomarkdowny is compatible with any operating system and has no formatting problems.  
 
-**Q:** Why does my home page not show anything?
-**A:** This is because you have not set the index.md, please refer to the readme of the theme of your choice and set it at the beginning of the index, in the example of this guide, the default settings are used to change the index.md
+**Q:** How to change the theme?  
+**A:** We need to change the `_config.yml` to choose theme. And we can use [Jekyll theme hosted on Github](https://pages.github.com/themes/),  `remote_theme: THEME-NAME`, Replace theme-name with the name of the theme of your choice. More details can see [Basic theme tutorials ](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll)
