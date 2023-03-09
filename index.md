@@ -1,5 +1,6 @@
 ---
-# title :jiazhen tian resume
+layout: default
+title: Jiazhen Tian Resume
 ---
 
 # **Jiazhen Tian**
