@@ -119,7 +119,7 @@ Then wait for a while and we will get the link to the GitHub page, so we will su
  Open terminal in static site file and run the following commands
  1. Run ```gem install bundler``` to install bundler
  2. Run ```bundle exec jekyll serve``` 
-- If you get error in this step ``require': cannot load such file -- webrick (LoadError)` you can run following line to deal it
+- If you get error in this step `require': cannot load such file -- webrick (LoadError) you can run following line to deal it
     ```
     bundle add webrick
     ```
