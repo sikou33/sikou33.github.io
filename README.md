@@ -8,7 +8,6 @@
 
 ## Content:
 ---
-- [How to create static websites with resume and host it on GitHub Pages](#how-to-create-static-websites-with-resume-and-host-it-on-github-pages)
 - [Purpose:](#purpose)
 - [Content:](#content)
 - [Prerequisites:](#prerequisites)
