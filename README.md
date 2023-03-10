@@ -9,8 +9,8 @@
 ## Content:
 ---
 - [How to create static websites with resume and host it on GitHub Pages](#how-to-create-static-websites-with-resume-and-host-it-on-github-pages)
-  - [Purpose:](#purpose)
-  - [Content:](#content)
+- [Purpose:](#purpose)
+- [Content:](#content)
 - [Prerequisites:](#prerequisites)
 - [Instructions:](#instructions)  
       - [**Step 1:** Create a new repository](#step-1-create-a-new-repository)  
