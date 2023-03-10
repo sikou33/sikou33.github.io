@@ -8,15 +8,15 @@
 
 ## Content:
 ---
-- [Purpose:](#purpose)
-- [Content:](#content)
+- [How to create static websites with resume and host it on GitHub Pages](#how-to-create-static-websites-with-resume-and-host-it-on-github-pages)
+  - [Purpose:](#purpose)
+  - [Content:](#content)
 - [Prerequisites:](#prerequisites)
-- [Instructions:](#instructions)  
-      - [**Step 1:** Create a new repository](#step-1-create-a-new-repository)  
-      - [**Step 2:** Create, and Edit Static website](#step-2-create-and-edit-static-website)  
-      - [**Step 3:** Hosting on GitHub Pages](#step-3-hosting-on-github-pages)  
+- [Instructions:](#instructions)
+      - [**Step 1:** Create a new repository](#step-1-create-a-new-repository)
+      - [**Step 2:** Create, and Edit Static website](#step-2-create-and-edit-static-website)
+      - [**Step 3:** Hosting on GitHub Pages](#step-3-hosting-on-github-pages)
       - [**Step 4:** Local View](#step-4-local-view)
-
 - [Steps relate to general principles of current Technical Writing:](#steps-relate-to-general-principles-of-current-technical-writing)
 - [More Resources:](#more-resources)
 - [Authors and Acknowledgments:](#authors-and-acknowledgments)
