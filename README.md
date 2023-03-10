@@ -8,14 +8,15 @@
 
 ## Content:
 ---
-  - [Purpose:](#purpose)
-  - [Content:](#content)
-  - [Prerequisites:](#prerequisites)
-  - [Instructions:](#instructions)  
-        - [**Step 1:** Create a new repository](#step-1-create-a-new-repository)  
-        - [**Step 2:** Create, and Edit Static website](#step-2-create-and-edit-static-website)  
-        - [**Step 3:** Hosting on GitHub Pages](#step-3-hosting-on-github-pages)  
-        - [**Step 4:** Local View](#step-4-local-view)  
+- [Purpose:](#purpose)
+- [Content:](#content)
+- [Prerequisites:](#prerequisites)
+- [Instructions:](#instructions)
+      - [**Step 1:** Create a new repository](#step-1-create-a-new-repository)
+      - [**Step 2:** Create, and Edit Static website](#step-2-create-and-edit-static-website)
+      - [**Step 3:** Hosting on GitHub Pages](#step-3-hosting-on-github-pages)
+      - [**Step 4:** Local View](#step-4-local-view)
+
 - [Steps relate to general principles of current Technical Writing:](#steps-relate-to-general-principles-of-current-technical-writing)
 - [More Resources:](#more-resources)
 - [Authors and Acknowledgments:](#authors-and-acknowledgments)
@@ -131,11 +132,11 @@ Then wait for a while and we will get the link to the GitHub page, so we will su
 
 # Steps relate to general principles of current Technical Writing:
 ---
-1. **Use Lightweight Markup**. Firstly, we used markdown, a lightweight language described in the book. Markdown is a very simple lightweight language that users can master in a short time, and according to the Etter's book, writing XML is very hard, lightweight is to make it easier to produce well-formed XML. So we chose to use markdown to format the resume, which makes it very easy to update it. In our case, we only need to make very few changes to resume.md to get the file to show up in its entirety on the GitHub page. And lightweight markup languages are more portable and able to function on all operating systems, therefore we don't need to worry about the compatibility of the system
+1. **Use Lightweight Markup**. Firstly, we used markdown, a lightweight language described in the book. Markdown is a very simple lightweight language that users can master in a short time, and according to the Etter's book, writing XML is very hard, lightweight is to make it easier to produce well-formed XML. So we chose to use markdown to format the resume, which makes it very easy to update it. In our case, Instructions step 2 we only need to make very few changes to `resume.md` to get the file to display in its entirety on the GitHub page, and we don't need to learn XML or HTML. And lightweight markup languages are more portable and able to function on all operating systems, therefore we don't need to worry about the compatibility of the system
 
-2. **Make Static Websites**.  Secondly, according to the Etter's book, static sites are high-speed, simplicity, and portability,I can host static websites anywhere like GitHub pages, You can test static websites on your local computer without installing. In this guide, we've taken a static website and tested it locally, which is very easy and convenient, and our changes are also shown in real time. At the same time, because there is no database, it will provide high security.
+2. **Make Static Websites**.  Secondly, according to the Etter's book, static sites are high-speed, simplicity, and portability,Therefore  In this guide, Instructions step 4 we've taken a static website and tested it locally, which is very easy and convenient, and our changes are also shown in real time. After we change the index content in the editor, we can refresh it to see the updated content on our local site. At the same time, because there is no database, it will provide high security.
 
-3. **Use Distributed Version Control**. Finally, We chose GitHub to host our resume because GitHub is built on top of git, which is a distributed version control system. According to Etter's book, distributed systems have better performance, support offline work, and have the advantage of multiple people working on the same file. So it is very convenient to update the resume file, We just need to make the changes locally, submit the push and the update will be done
+3. **Use Distributed Version Control**. Finally, We chose GitHub to host our resume because GitHub is built on top of git, which is a distributed version control system. According to Etter's book, "distributed systems have better performance, support offline work, and have the advantage of multiple people working on the same file." If this is a multi-person project, so it is very convenient to update the resume file. We just need to make the changes locally, submit the push and the update will be done, and there is no need to go with others to transfer files, because the latest files are on GitHub.
 
 # More Resources:
 ---
@@ -158,7 +159,7 @@ Then wait for a while and we will get the link to the GitHub page, so we will su
 **A:** Because there is no correct application theme, please find the readme of your chosen theme and refer to the instructions to change it. It is also possible that your configuration file and index.md file are not modified with reference to the theme. If your local repository is not connected to GitHub, check that your own GitHub link is correct.
 
 **Q:** Why is Markdown better than a word processor?  
-**A:** Because markdown is lightweight. We can even use it in the editor of the web without installing any software.Secondly markdomarkdowny is compatible with any operating system and has no formatting problems.  
+**A:** Because markdown is lightweight. We can even use it in the editor of the web without installing any software. Secondly markdown is compatible with any operating system and has no formatting problems.  
 
 **Q:** Why does my home page not show anything?  
 **A:** This is because you have not set the index.md, please refer to the readme of the theme of your choice and set it at the beginning of the index, in the example of this guide, the default settings are used to change the index.md
